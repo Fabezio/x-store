@@ -12,5 +12,7 @@ module.exports = {
     ecmaVersion: 12
   },
   rules: {
+    semi: false,
+    singlequotes: true
   }
 }

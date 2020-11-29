@@ -5,11 +5,15 @@ body, html {
 }
 
 nav {
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     text-transform: uppercase;
 }
 
-
+#anti-collision {
+    position: relative;
+    bottom: 0px;
+    height: 3rem;
+}
 footer {
     position: absolute;
     bottom: 0px;
