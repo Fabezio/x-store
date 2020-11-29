@@ -9,8 +9,8 @@ app.get('/', (req, res) => {
   res.render('index')
 })
 
-const clog = console.log
+const disp = console.log
 
 app.listen(3000, () => {
-  clog('server started...')
+  disp('server started...')
 })
