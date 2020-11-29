@@ -4,9 +4,8 @@
   "description": "A multivendor ecommerce website (exhibition)",
   "main": "app.js",
   "scripts": {
-    "test": "mocha tests/*.js --exit",   
-    "lint": "eslint ./*.js", 
-    "lint:fix": "eslint --fix ./*.js"
+    "test": "mocha tests/*.js --exit",
+    "std": "standard --fix"
   },
   "keywords": [
     "ecommerce",
@@ -20,6 +19,8 @@
     "ejs": "^3.1.5",
     "express": "^4.17.1",
     "mongoose": "^5.10.17",
+    "lint:fix": "eslint --fix ./*.js",
+    // "standard": "^16.0.3",
     "stripe": "^8.126.0"
   },
   "devDependencies": {

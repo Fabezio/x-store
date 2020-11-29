@@ -4,8 +4,8 @@
   "description": "A multivendor ecommerce website (exhibition)",
   "main": "app.js",
   "scripts": {
-    "test": "mocha tests/*.js --exit",   
-    "lint": "eslint ./*.js", 
+    "test": "mocha tests/*.js --exit",
+   
     "lint:fix": "eslint --fix ./*.js"
   },
   "keywords": [
