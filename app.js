@@ -16,19 +16,13 @@ app.use(bodyParser.urlencoded({ extended: false }))
 app
   .route('/register')
   .get((req, res) => {
-    return res.render('register')
+    return res.render('register', { message: null })
   })
-  .post((req, res) => {
-    const newUser = {
-      username: req.body.username,
-      email: req.body.email,
-      password: req.body.password
-    }
-    User.create(newUser, (err) => {
-      clog(err || 'Form submitted!')
-      return res.redirect('/')
-    })
-    // return res.send(req.body)
+  .post(async (req, res) => {
+    // let message
+    const newUser = new User(req.body)
+    await newUser.save()
+    return res.render('register', { message: 'registration successful!' })
   })
 
 const clog = console.log
