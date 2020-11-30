@@ -2,8 +2,10 @@ module.exports = {
   env: {
     browser: true,
     commonjs: true,
-    es2021: true,
-    node: true
+    node: true,
+    es2020: true,
+    es6: true,
+    mongo: true
   },
   extends: [
     'standard'
@@ -15,4 +17,4 @@ module.exports = {
     semi: false,
     singlequotes: true
   }
-}
+};

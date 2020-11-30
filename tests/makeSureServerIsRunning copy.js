@@ -11,6 +11,7 @@ describe('make sure status is 200', () => {
     chai.request(app)
       .get('/')
       .end((err, res) => {
+        if (err)console.error(err)
         res.should.have.status(200)
         res.body.should.be.a('object')
         done()

@@ -1,9 +1,10 @@
 const express = require('express')
 const bodyParser = require('body-parser')
-const { authRoutes } = require('./routes/authRoutes')
 require('./utils/db.config')
-const app = express()
+const authRoutes = require('./routes/authRoutes')
 const ejs = require('ejs')
+
+const app = express()
 
 app.set('view engine', 'ejs')
 app.use(express.static('static'))
