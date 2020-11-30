@@ -1,6 +1,6 @@
 const express = require('express')
 const bodyParser = require('body-parser')
-const { authRoutes } = require('./routes/authRoutes')
+const authRoutes = require("./routes/authRoutes")
 require('./utils/db.config')
 const app = express()
 const ejs = require('ejs')
@@ -12,7 +12,9 @@ app.get('/', (req, res) => {
   res.render('index')
 })
 app.use(bodyParser.urlencoded({ extended: false }))
-app.use('/', authRoutes)
+
+
+  
 
 const clog = console.log
 
