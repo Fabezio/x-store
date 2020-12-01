@@ -1,0 +1,26 @@
+<%- include('../partials/Head.ejs') -%>
+<title>x store | api | users</title>
+<%- include('../partials/ApiNav.ejs') -%>
+<div class="container w-50 mx-auto my-5">
+    <h1>admin</h1>
+    <h2>users list</h2>
+    <% if (users) { %>
+        <% users.forEach((user) => { %>
+            <h3 class="alert alert-default border-info"><%= user.username %>
+            <span>
+                <small>
+                    <a href="/api/users/<%= user._id %>">C</a>
+                </small>
+            </span>
+            </h3>
+        <% }) %>
+    <% } else { %>
+        <h3>add users</h3>
+        <button class="d-block btn btn-warning">add a user</button>
+    <% } %>
+    
+
+</div>
+
+
+<!-- <%- include('../partials/Foot.ejs') -%> -->
