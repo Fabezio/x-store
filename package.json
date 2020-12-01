@@ -4,10 +4,11 @@
   "description": "A multivendor ecommerce website (exhibition)",
   "main": "app.js",
   "scripts": {
+    "start": "nodemon app.js",
     "test": "mocha tests/*.js --exit",
     "lint": "eslint ./*.js",
     "lint:fix": "eslint --fix ./*.js",
-    "standard": "standard --fix"
+    "std": "standard --fix"
   },
   "keywords": [
     "ecommerce",
