@@ -4,7 +4,7 @@
 <div class="container w-50 mx-auto my-5">
     <h1>admin</h1>
     <h2>users list</h2>
-    <% if (users) { %>
+    <% if (users.length > 0) { %>
         <% users.forEach((user) => { %>
             <h3 class="alert alert-default border-info"><%= user.username %>
             <span>
@@ -15,7 +15,7 @@
             </h3>
         <% }) %>
     <% } else { %>
-        <h3>add users</h3>
+        <h3 class="alert alert-warning">add users</h3>
     <% } %>
     
     <%- include('../partials/UI/registerBtn.ejs') -%>

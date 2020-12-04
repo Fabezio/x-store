@@ -1,6 +1,7 @@
+/* const Joi = require('joi') */
 const Joi = require('@hapi/joi')
 const registerSchema = Joi.object({
-  username: Joi.string().trim().min(2).max(64).required(),
+  name: Joi.string().trim().min(2).max(64).required(),
 
   password: Joi.string().required(),
   //   password: Joi.string().pattern(new RegExp('^[a-zA-Z0-9]{3,30}$')),

@@ -5,7 +5,7 @@
     <h1>admin</h1>
     <h2>users list</h2>
     <% if (user) { %>
-        <h3 class="alert alert-default border-info"><%= user.username %></h3>
+        <h3 class="alert alert-default border-info"><%= user.name %></h3>
         <a href="mailto:<%=user.email %>"><%=user.email %></a>
         
     <% } else { %>

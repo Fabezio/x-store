@@ -3,7 +3,7 @@ const bcrypt = require('bcrypt')
 
 const UserSchema = mongoose.Schema(
   {
-    username: {
+    name: {
       type: String,
       required: [true, 'Name is required'],
       minlength: [2, 'Name length cannot be less than 2 characters '],
