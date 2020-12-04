@@ -26,6 +26,8 @@
     "express-session": "^1.17.1",
     "joi": "^17.3.0",
     "mongoose": "^5.10.17",
+    "passport": "^0.4.1",
+    "passport-local": "^1.0.0",
     "standard": "^16.0.3",
     "stripe": "^8.126.0"
   },

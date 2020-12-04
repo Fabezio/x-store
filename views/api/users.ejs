@@ -7,12 +7,12 @@
     <% if (users.length > 0) { %>
         <% users.forEach((user) => { %>
             <h3 class="alert alert-default border-info"><%= user.username %>
-            <span>
-                <small>
-                    <a href="/api/users/<%= user._id %>">C</a>
-                </small>
-            </span>
-            </h3>
+                <span>
+                    <small>
+                        <a href="/api/users/<%= user._id %>">C</a>
+                    </small>
+                </span>
+                </h3>
         <% }) %>
     <% } else { %>
         <h3 class="alert alert-warning">add users</h3>

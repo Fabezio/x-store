@@ -3,7 +3,7 @@
 <%- include('partials/Navbar.ejs') -%>
 <div class="container my-5">
   <h1 class="mb-4">Registration</h1>
-  <% if (message.type ) { %>
+  <% if (message ) { %>
   <h2 class="alert alert-<%= message.type == 'success' ? 'success' : 'danger' %>"><%= message.body %></h2>
   <% } %>
   <form method="POST" action="/register">
